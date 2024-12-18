@@ -1,4 +1,3 @@
-```markdown
 # Python 在人口研究中的应用
 
 ## 简介
