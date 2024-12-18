@@ -1,0 +1,53 @@
+project:
+  type: book
+
+book:
+  title: "Python 在人口研究中的应用"
+  author: "凌宛莹"
+  date: 2024-12-18
+  chapters:
+    - index.qmd          # 书籍简介
+    - part: "第一部分：基础知识"
+      chapters:
+        - chapter1.qmd    # 人口学与人口研究
+        - chapter2.qmd    # 人口研究的数据的类型与特点
+        - chapter3.qmd    # Python 数据分析基础
+    - part: "第二部分：人口数据的获取与处理"
+      chapters:
+        - chapter4.qmd    # 人口研究的数据来源
+        - chapter5.qmd    # 数据的清洗与预处理
+        - chapter6.qmd    # 数据格式与标准化
+        - chapter7.qmd    # 使用 Python 爬取人口数据
+    - part: "第三部分：人口数据的分析与可视化"
+      chapters:
+        - chapter8.qmd    # 数据的描述性统计
+        - chapter9.qmd    # 人口金字塔
+        - chapter10.qmd   # 空间数据可视化
+    - part: "第四部分：人口研究的进阶方法与建模"
+      chapters:
+          - chapter11.qmd   # 因素分解
+          - chapter12.qmd   # 年龄-时期-队列分析
+          - chapter13.qmd   # 回归分析在人口学中的应用
+          - chapter14.qmd   # 机器学习在人口研究中的应用
+          - chapter15.qmd   # 人口预测
+          - chapter16.qmd   # 基于代理的模拟
+    - part: "附录"
+      chapters:
+        - summary.qmd     # 总结章节
+        - references.qmd  # 参考文献
+
+bibliography: references.bib  # 指定参考文献文件
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 2
+    number-sections: false
+    code-fold: false
+  pdf:
+    documentclass: scrreprt
+    number-sections: false
+    toc: false
+
+editor: visual             # 使用 Visual 编辑器
